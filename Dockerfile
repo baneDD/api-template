@@ -15,7 +15,4 @@ COPY . .
 
 EXPOSE 3000
 
-CMD if [ "$NODE_ENV" = "development" ]; \
-    then npm run start:dev; \
-    else npm run start; \
-    fi;
+CMD ["sh", "start.sh"]
