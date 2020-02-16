@@ -1,14 +1,14 @@
 import express from "express";
 import swaggerUi from "swagger-ui-express";
 import swaggerJsdoc from "swagger-jsdoc";
+import { swagger_ui_enabled } from "../config/router.mjs";
 import { get as getTodos } from "../controllers/todos.mjs";
 
 const router = new express.Router();
 
 router.route("/todos/:id?").get(getTodos);
 
-// If this is a dev environment, enable Swagger UI
-if (process.env.NODE_ENV !== "production") {
+if (swagger_ui_enabled || process.env.NODE_ENV === "development") {
   const options = {
     swaggerDefinition: {
       openapi: "3.0.0",
