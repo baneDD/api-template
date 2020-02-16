@@ -4,8 +4,8 @@
   "description": "Express API Template",
   "main": "server.mjs",
   "scripts": {
-    "start": "node --experimental-modules server.mjs",
-    "start:dev": "nodemon --experimental-modules server.mjs"
+    "start": "node --experimental-modules ./src/server.mjs",
+    "start:dev": "nodemon --experimental-modules ./src/server.mjs"
   },
   "author": "Bane Debeljevic",
   "license": "MIT",

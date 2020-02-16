@@ -5,6 +5,9 @@ This is a simple Express API template to use for API development. Features:
 - Containerized for use with Docker
 - Nodemon for development to allow easy reloading on change
 - Includes Swagger UI and JSONdoc autogeneration
+- Logging service to a rolling file
+- Request logs
+- Console logging for development mode
 - SQLite as the database for the example, can be changed to different data source as desired
 - VS Code debugging configuration
 
