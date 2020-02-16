@@ -13,4 +13,4 @@ This is a simple Express API template to use for API development. Features:
 - Run `npm install` to install all the project dependencies
 - Run `start.sh` to run the project locally
 
-NOTE: To enable Swagger UI set NODE_ENV to _development_
+NOTE: To enable Swagger UI set **NODE_ENV** to **development**
