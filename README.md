@@ -11,7 +11,7 @@ This is a simple Express API template to use for API development. Features:
 - SQLite as the database for the example, can be changed to different data source as desired
 - VS Code debugging configuration
 
-# Builing and running the project
+# Building and running the project
 
 - Run `npm install` to install all the project dependencies
 - Run `start.sh` to run the project locally
