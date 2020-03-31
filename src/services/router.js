@@ -1,8 +1,8 @@
 import express from "express";
 import swaggerUi from "swagger-ui-express";
 import swaggerJsdoc from "swagger-jsdoc";
-import { swagger_ui_enabled } from "../config/router.mjs";
-import { get as getTodos } from "../controllers/todos.mjs";
+import { swagger_ui_enabled } from "../config/router.js";
+import { get as getTodos } from "../controllers/todos.js";
 
 const router = new express.Router();
 

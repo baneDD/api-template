@@ -2,10 +2,11 @@
   "name": "express-api-template",
   "version": "1.0.0",
   "description": "Express API Template",
-  "main": "server.mjs",
+  "type": "module",
+  "main": "server.js",
   "scripts": {
-    "start": "node --experimental-modules ./src/server.mjs",
-    "start:dev": "nodemon --experimental-modules ./src/server.mjs"
+    "start": "node ./src/server.js",
+    "start:dev": "nodemon ./src/server.js"
   },
   "author": "Bane Debeljevic",
   "license": "MIT",

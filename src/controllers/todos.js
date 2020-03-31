@@ -1,4 +1,4 @@
-import { getAllTodos, getTodoById } from "../services/database.mjs";
+import { getAllTodos, getTodoById } from "../services/database.js";
 
 /**
  * @swagger
@@ -65,29 +65,28 @@ import { getAllTodos, getTodoById } from "../services/database.mjs";
  *                $ref: '#/components/schemas/Todo'
  */
 async function get(req, res, next) {
-    try {
-        const context = {};
+  try {
+    const context = {};
 
-        context.id = parseInt(req.params.id, 10);
+    context.id = parseInt(req.params.id, 10);
 
-        if(context.id) {
-            await getTodo(res,context.id);
-        } else {
-            await getTodos(res);
-        }
-    } catch (err) {
-        next(err);
+    if (context.id) {
+      await getTodo(res, context.id);
+    } else {
+      await getTodos(res);
     }
+  } catch (err) {
+    next(err);
+  }
 }
 
 async function getTodos(res) {
-    const todos = await getAllTodos();
-    if (todos) {
-        res.status(200).json(todos);
-    }
-    else {
-        res.status(404).end();
-    }
+  const todos = await getAllTodos();
+  if (todos) {
+    res.status(200).json(todos);
+  } else {
+    res.status(404).end();
+  }
 }
 
 async function getTodo(res, id) {

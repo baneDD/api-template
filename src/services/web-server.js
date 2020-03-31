@@ -1,9 +1,9 @@
 import { createServer } from "http";
 import express from "express";
 import morgan from "morgan";
-import { port } from "../config/web-server.mjs";
-import router from "./router.mjs";
-import logger from "./logger.mjs";
+import { port } from "../config/web-server.js";
+import router from "./router.js";
+import logger from "./logger.js";
 
 let httpServer;
 

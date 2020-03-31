@@ -1,6 +1,6 @@
-import { initialize as initializeWebServer, close as closeWebServer } from "./services/web-server.mjs";
-import { initialize as initializeSqliteDb, close as closeSqliteDb } from "./services/database.mjs";
-import logger from "./services/logger.mjs";
+import { initialize as initializeWebServer, close as closeWebServer } from "./services/web-server.js";
+import { initialize as initializeSqliteDb, close as closeSqliteDb } from "./services/database.js";
+import logger from "./services/logger.js";
 
 const WEB_SERVER = "Web Server";
 const SQLITE_DB = "SQLite Database";
